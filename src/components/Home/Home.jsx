@@ -63,9 +63,13 @@ const Home = ({ isLoading }) => {
       </div>
       <div className='left-side-quote'>
         <p ref={el => (p1 = el)}>
-          I create didgital experiences that merge art <br /> direction,
-          branding, creative strategy, web <br /> design, prototyping, and
-          digital interactions.
+          I am an up and coming full-stack developer, <br />
+          with a passion for developing clever solutions <br />
+          currently living in Oslo. I started out as a <br />
+          hobby programmer at the age of 15 and have ever <br />
+          since pursued my dream of one day working as a software developer{' '}
+          <br />
+          full time.
         </p>
       </div>
       <div className='container'>

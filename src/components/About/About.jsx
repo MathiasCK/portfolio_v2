@@ -41,101 +41,52 @@ const About = () => {
     });
   });
   return (
-    <>
-      <div>
-        <div className='about'>
-          <Navbar timeline={timeline_about} />
-          <div className='about-container'>
-            <div className='container-text'>
-              <div className='container-inner-text1'>
-                <p ref={el => (text1 = el)}>Taimoor</p>
-              </div>
-              <div className='container-inner-text2'>
-                <p ref={el => (text2 = el)}>Shahzada</p>
-              </div>
-            </div>
-            <di
-              ref={el => (p1 = el)}
-              v
-              className='container-quote container-quote1'
-            >
-              I create sites and <br /> applications that cause <br /> pleasant
-              emotions
-            </di>
-            <div className='container-quote container-quote2'>
-              I specialize in interaction <br /> design, experience websites{' '}
-              <br /> and applications
-            </div>
-            <div className='container-image' ref={el => (image = el)}></div>
+    <section className='about'>
+      <Navbar timeline={timeline_about} />
+      <div className='about-container'>
+        <div className='container-text'>
+          <div className='container-inner-text1'>
+            <p ref={el => (text1 = el)}>Mathias</p>
           </div>
-          <div className='about-container2'>
-            <div className='about-container2-heading'>
-              <div className='about-text-lower'>
-                <p>Web Designer,</p>
-              </div>
-              <div className='about-text-lower'>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front-End</p>
-              </div>
-              <div className='about-text-lower'>
-                <p>&nbsp;Developer&nbsp;&nbsp;&nbsp; &</p>
-              </div>
-              <div className='about-text-lower'>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp; a Youtuber</p>
-              </div>
-            </div>
-            <div className='about-container2-p'>
-              <p>
-                Lorem ipsum dolor sit amet. <br /> Lorem ipsum dolor sit amet,{' '}
-                <br /> consectetur adipisicing elit. Sed, cum?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Numquam molestiae architecto minima odio, incidunt qui?
-              </p>
-              <p className='about-container2-p-right'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                sunt, <br /> ipsam laborum rerum fugiat dolore natus unde odio
-                placeat quia.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet. <br /> Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Modi, ipsam.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
-                cupiditate!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
-                dolorum. <br /> Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Aut, nemo!
-              </p>
-            </div>
-            <div className='about-container2-heading2'>
-              <div className='about-text-lower'>
-                <p>What is my feature?</p>
-              </div>
-            </div>
-            <div className='about-container2-p'>
-              <p className='about-container2-p-right'>
-                Lorem ipsum dolor sit amet. <br /> Lorem ipsum dolor sit amet.{' '}
-                <br /> Lorem ipsum dolor sit amet.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet. <br /> Lorem ipsum dolor sit amet.{' '}
-                <br /> Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-            <div className='about-container-flower'>
-              <img src={flower} alt='' />
-            </div>
-          </div>
-          <div className='about-footer'>
-            <GetInTouch />
+          <div className='container-inner-text2'>
+            <p ref={el => (text2 = el)}>Kolberg</p>
           </div>
         </div>
+        <di
+          ref={el => (p1 = el)}
+          v
+          className='container-quote container-quote1'
+        >
+          Well-organised <br /> problem solver, independend employee <br />{' '}
+          looking for a full time position
+        </di>
+        <div className='container-quote container-quote2'>
+          I specialize in fullstack <br /> JavaScript/React websites <br /> and
+          applications
+        </div>
+        <div className='container-image' ref={el => (image = el)}></div>
       </div>
-    </>
+      <div className='about-container2'>
+        <div className='about-container2-heading'>
+          <div className='about-text-lower'>
+            <p>I build</p>
+          </div>
+          <div className='about-text-lower'>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;things</p>
+          </div>
+          <div className='about-text-lower'>
+            <p>&nbsp;&nbsp;for the&nbsp;&nbsp; </p>
+          </div>
+          <div className='about-text-lower'>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp; web.</p>
+          </div>
+        </div>
+        <div className='about-container-flower'>
+          <img src={flower} alt='' />
+        </div>
+      </div>
+      <GetInTouch />
+    </section>
   );
 };
 

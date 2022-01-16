@@ -1,3 +1,8 @@
+.about-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 .container-text {
   position: absolute;
   top: 0;
@@ -36,7 +41,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50vw;
-  background: url(../../../assets/image.jpeg) 50% 50% no-repeat;
+  background: url(../../../assets/profile-dark.jpg) 50% 50% no-repeat;
   background-size: cover;
   filter: grayscale(1);
   height: 110vh;
@@ -48,13 +53,14 @@
   left: 10%;
 }
 .about-container2 {
-  position: absolute;
-  top: 190vh;
+  //position: absolute;
+  //top: 190vh;
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  height: 250vh;
+  height: auto;
   width: 100%;
   flex-direction: column;
 }
@@ -98,7 +104,7 @@
   width: 100px;
 }
 .about-footer {
-  margin-top: 500vh;
+  margin-top: 350vh;
 }
 @keyframes animate-rotate {
   from {

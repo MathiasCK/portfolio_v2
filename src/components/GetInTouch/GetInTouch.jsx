@@ -7,7 +7,7 @@ const GetInTouch = () => {
     <div className='get-in-touch'>
       <h1>GET IN TOUCH</h1>
       <p>
-        If you have any general project or enquiry feel free and contact us -
+        If you have any general project or enquiry feel free and contact me -
         available now!
       </p>
       <img src={flower2} alt='' />

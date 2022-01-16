@@ -14,22 +14,44 @@ const Footer = () => {
           <div className='social-links'>
             <div className='social-links-h'>Social</div>
             <div className='social-links-items'>
-              <a href=''>Youtube</a>
-              <a href=''>Facebook</a>
-              <a href=''>Instagram</a>
-              <a href=''>Twitter</a>
-              <a href=''>Github</a>
-              <a href=''>LinkedIn</a>
-              <a href=''>Snapchat</a>
+              <a
+                href='https://www.instagram.com/mathias_kolberg/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Instagram
+              </a>
+              <a
+                href='https://github.com/MathiasCK'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Github
+              </a>
+
+              <a
+                href='https://www.linkedin.com/in/mathias-kolberg-094272197/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
           <div className='social-links'>
             <div className='social-links-h'>Contact</div>
             <div className='social-links-items'>
-              <a href=''>Mail</a>
-              <a href=''>Whatsapp</a>
-              <a href=''>Telegram</a>
-              <a href=''>+92 302 4606680</a>
+              <a
+                href='mailto:mathias.ck2000@gmail.com'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Mail
+              </a>
+
+              <a href='tel:004747683559' target='_blank' rel='noreferrer'>
+                Phone
+              </a>
             </div>
           </div>
           <div className='footer-menu social-links'>
@@ -49,10 +71,10 @@ const Footer = () => {
         </div>
         <div className='footer-bottom'>
           <div className='left-footer-bottom'>
-            <p>Pakistan</p>
+            <p>Norway</p>
           </div>
           <div className='right-footer-bottom'>
-            <p>2021. Taimoor Shahzada. ALL RIGHT RESERVED</p>
+            <p>2022. Mathias Kolberg. ALL RIGHT RESERVED</p>
           </div>
         </div>
       </div>
