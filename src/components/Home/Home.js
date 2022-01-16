@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from 'react';
-import './Home.css';
+import './styles/home.styles.scss';
 import { Navbar } from '../../components';
 import flower from '../../assets/flower.svg';
 import another from '../../assets/another.svg';
 import arrow from '../../assets/arrow.svg';
 import { Link } from 'react-router-dom';
-import GetInTouch from '../GetInTouch/GetInTouch';
-import Footer from '../Footer/Footer';
 import gsap from 'gsap';
-function Home() {
+
+const Home = () => {
   let text1 = useRef(null);
   let text2 = useRef(null);
   let text3 = useRef(null);
@@ -191,6 +190,6 @@ function Home() {
       </div>
     </div>
   );
-}
+};
 
 export default Home;

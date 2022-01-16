@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { GetInTouch, Navbar } from '../../components';
-
-import './About.css';
+import './styles/about.styles.scss';
 import gsap from 'gsap';
 import flower from '../../assets/flower.svg';
-function About() {
+
+const About = () => {
   let text1 = useRef(null);
   let text2 = useRef(null);
   let image = useRef(null);
@@ -137,6 +137,6 @@ function About() {
       </div>
     </>
   );
-}
+};
 
 export default About;

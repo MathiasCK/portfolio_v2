@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Navbar } from '../../components';
-import './Projects.css';
+import './styles/project.styles.scss';
 import arrow from '../../assets/arrow.svg';
-import GetInTouch from '../GetInTouch/GetInTouch';
-import Footer from '../Footer/Footer';
 import gsap from 'gsap';
-function Projects() {
+
+const Projects = () => {
   const timeline_project = gsap.timeline();
   let text1 = useRef(null);
   let itemsProject = useRef(null);
@@ -144,6 +143,6 @@ function Projects() {
       </div>
     </div>
   );
-}
+};
 
 export default Projects;

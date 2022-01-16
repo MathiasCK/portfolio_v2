@@ -1,12 +1,12 @@
 import React, { useRef, useEffect } from 'react';
-import './App.css';
+import './styles/App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './utils/ScrollToTop';
 import gsap from 'gsap';
 import { Homepage, Aboutpage, Projectspage, Contactpage } from './pages';
 import { Footer } from './components';
 
-function App() {
+const App = () => {
   let cursor = useRef(null);
   let posX1 = useRef(null);
   let posY1 = useRef(null);
@@ -23,7 +23,7 @@ function App() {
     let mouseY = mouseY1.current;
     tl.to({}, 0.016, {
       repeat: -1,
-      onRepeat: function () {
+      onRepeat: () => {
         posX += (mouseX - posX) / 10;
         posY += (mouseY - posY) / 10;
         tl.set(cursor, {
@@ -34,7 +34,7 @@ function App() {
         });
       },
     });
-    document.addEventListener('mousemove', function (e) {
+    document.addEventListener('mousemove', e => {
       mouseX = e.pageX;
       mouseY = e.pageY;
     });
@@ -74,13 +74,13 @@ function App() {
     });
   });
 
-  var id;
-  var width1 = 1;
+  let id;
+  let width1 = 1;
 
-  function loading() {
+  const loading = () => {
     id = setInterval(frame, 20);
-  }
-  function frame() {
+  };
+  const frame = () => {
     if (width1 >= 100) {
       clearInterval(id);
       load.play();
@@ -89,7 +89,7 @@ function App() {
       document.getElementById('barc').style.width = width1 + '%';
       document.getElementById('percent').innerHTML = width1 + '%';
     }
-  }
+  };
   window.addEventListener('load', e => {
     loading();
   });
@@ -135,6 +135,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

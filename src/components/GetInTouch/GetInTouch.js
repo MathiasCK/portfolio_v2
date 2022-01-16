@@ -1,7 +1,8 @@
 import React from 'react';
-import './GetInTouch.css';
+import './styles/getInTouch.styles.scss';
 import flower2 from '../../assets/flower2.svg';
-function GetInTouch() {
+
+const GetInTouch = () => {
   return (
     <div className='get-in-touch'>
       <h1>GET IN TOUCH</h1>
@@ -12,6 +13,6 @@ function GetInTouch() {
       <img src={flower2} alt='' />
     </div>
   );
-}
+};
 
 export default GetInTouch;

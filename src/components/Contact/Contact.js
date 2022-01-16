@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Navbar } from '../../components';
-import './Contact.css';
-import Footer from '../Footer/Footer';
+import './styles/contact.styles.scss';
 import flower from '../../assets/flower.svg';
 import gsap from 'gsap';
-function Contact() {
+
+const Contact = () => {
   const timeline_contact = gsap.timeline();
   let text1 = useRef(null);
   useEffect(() => {
@@ -34,6 +34,6 @@ function Contact() {
       </div>
     </div>
   );
-}
+};
 
 export default Contact;

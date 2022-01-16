@@ -1,17 +1,16 @@
 import React, { useRef, useEffect } from 'react';
-import './navbar.styles.scss';
+import './styles/navbar.styles.scss';
 import { Link } from 'react-router-dom';
 import MenuIcon from '../../assets/menu.svg';
-import gsap from 'gsap';
-function Header({ timeline }) {
+
+const Header = ({ timeline }) => {
   let li1 = useRef(null);
   let li2 = useRef(null);
   let li3 = useRef(null);
   let li4 = useRef(null);
-  let li5 = useRef(null);
 
   useEffect(() => {
-    timeline.from([li1, li2, li3, li4, li5], {
+    timeline.from([li1, li2, li3, li4], {
       opacity: 0,
       duration: 1,
       delay: 0.2,
@@ -49,15 +48,10 @@ function Header({ timeline }) {
               Contact
             </Link>
           </li>
-          <li ref={el => (li5 = el)}>
-            <Link to='' className='li'>
-              Youtube
-            </Link>
-          </li>
         </ul>
       </nav>
     </div>
   );
-}
+};
 
 export default Header;
