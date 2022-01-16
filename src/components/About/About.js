@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import Footer from '../Footer/Footer';
-import GetInTouch from '../GetInTouch/GetInTouch';
-import Header from '../Header/Header';
+import { GetInTouch, Navbar } from '../../components';
+
 import './About.css';
 import gsap from 'gsap';
-import flower from '../assets/flower.svg';
+import flower from '../../assets/flower.svg';
 function About() {
   let text1 = useRef(null);
   let text2 = useRef(null);
@@ -45,7 +44,7 @@ function About() {
     <>
       <div>
         <div className='about'>
-          <Header timeline={timeline_about} />
+          <Navbar timeline={timeline_about} />
           <div className='about-container'>
             <div className='container-text'>
               <div className='container-inner-text1'>
@@ -133,7 +132,6 @@ function About() {
           </div>
           <div className='about-footer'>
             <GetInTouch />
-            <Footer />
           </div>
         </div>
       </div>

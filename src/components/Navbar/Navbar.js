@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import './Header.css';
+import './navbar.styles.scss';
 import { Link } from 'react-router-dom';
-import MenuIcon from '../assets/menu.svg';
+import MenuIcon from '../../assets/menu.svg';
 import gsap from 'gsap';
 function Header({ timeline }) {
   let li1 = useRef(null);
@@ -23,7 +23,7 @@ function Header({ timeline }) {
   });
   return (
     <div>
-      <header>
+      <nav className='navbar'>
         <div id='logo'></div>
         <div className='toggle-menu'>
           <img src={MenuIcon} alt='' />
@@ -55,7 +55,7 @@ function Header({ timeline }) {
             </Link>
           </li>
         </ul>
-      </header>
+      </nav>
     </div>
   );
 }

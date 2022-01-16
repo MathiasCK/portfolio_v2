@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import Header from '../Header/Header';
+import { Navbar } from '../../components';
 import './Contact.css';
 import Footer from '../Footer/Footer';
-import flower from '../assets/flower.svg';
+import flower from '../../assets/flower.svg';
 import gsap from 'gsap';
 function Contact() {
   const timeline_contact = gsap.timeline();
@@ -24,7 +24,7 @@ function Contact() {
   });
   return (
     <div>
-      <Header timeline={timeline_contact} />
+      <Navbar timeline={timeline_contact} />
       <div className='contact-page'>
         <div className='contact-page-container'>
           <h1 ref={el => (text1 = el)}>
@@ -32,7 +32,6 @@ function Contact() {
           </h1>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

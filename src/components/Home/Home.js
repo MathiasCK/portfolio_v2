@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import './Home.css';
-import Header from '../Header/Header';
-import flower from '../assets/flower.svg';
-import another from '../assets/another.svg';
-import arrow from '../assets/arrow.svg';
+import { Navbar } from '../../components';
+import flower from '../../assets/flower.svg';
+import another from '../../assets/another.svg';
+import arrow from '../../assets/arrow.svg';
 import { Link } from 'react-router-dom';
 import GetInTouch from '../GetInTouch/GetInTouch';
 import Footer from '../Footer/Footer';
@@ -38,7 +38,7 @@ function Home() {
   });
   return (
     <div className='home'>
-      1 <Header timeline={timeline_home} />
+      1 <Navbar timeline={timeline_home} />
       <div className='container'>
         <div className='container1'>
           <div className='txt-line' id='taimoor'>
@@ -188,8 +188,6 @@ function Home() {
           <br />
           <p>Click me!</p>
         </div>
-        <GetInTouch />
-        <Footer />
       </div>
     </div>
   );

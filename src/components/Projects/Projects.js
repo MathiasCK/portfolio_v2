@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import Header from '../Header/Header';
+import { Navbar } from '../../components';
 import './Projects.css';
-import arrow from '../assets/arrow.svg';
+import arrow from '../../assets/arrow.svg';
 import GetInTouch from '../GetInTouch/GetInTouch';
 import Footer from '../Footer/Footer';
 import gsap from 'gsap';
@@ -33,7 +33,7 @@ function Projects() {
 
   return (
     <div>
-      <Header timeline={timeline_project} />
+      <Navbar timeline={timeline_project} />
       <div className='project-page'>
         <div className='my-projects'>
           <h1 ref={el => (text1 = el)}>
@@ -142,8 +142,6 @@ function Projects() {
           </div>
         </div>
       </div>
-      <GetInTouch />
-      <Footer />
     </div>
   );
 }
