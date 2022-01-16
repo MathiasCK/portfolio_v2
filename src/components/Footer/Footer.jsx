@@ -7,9 +7,7 @@ const Footer = () => {
       <div className='footer'>
         <div className='footer-container'>
           <div className='message-for-users'>
-            <span>
-              Please contact me in any way <br /> you like
-            </span>
+            Please contact me in any way <br /> you like
           </div>
           <div className='social-links'>
             <div className='social-links-h'>Social</div>
