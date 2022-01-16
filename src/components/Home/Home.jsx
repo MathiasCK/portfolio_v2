@@ -10,7 +10,9 @@ import Carousel from './Carousel';
 import Skills from './Skills';
 import ShortAbout from './ShortAbout';
 
-const Home = ({ isLoading }) => {
+const Home = () => {
+  const homeRef = useRef(null);
+
   let text1 = useRef(null);
   let text2 = useRef(null);
   let text3 = useRef(null);
@@ -39,8 +41,9 @@ const Home = ({ isLoading }) => {
       opacity: 0,
     });
   });
+
   return (
-    <section className='home'>
+    <section className='home' ref={homeRef}>
       <Navbar timeline={timeline_home} />
       {/* <Introduction
         text1={text1}

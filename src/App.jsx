@@ -7,8 +7,6 @@ import { Homepage, Aboutpage, Projectspage, Contactpage } from './pages';
 import { Footer } from './components';
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
   let cursor = useRef(null);
   let posX1 = useRef(null);
   let posY1 = useRef(null);
@@ -118,7 +116,7 @@ const App = () => {
           <ScrollToTop />
           <Switch>
             <Route path='/' exact>
-              <Homepage isLoading={isLoading} />
+              <Homepage />
             </Route>
           </Switch>
           <Switch>
