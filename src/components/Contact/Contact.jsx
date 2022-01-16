@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Navbar } from '../../components';
+import { Navbar } from '..';
 import './styles/contact.styles.scss';
 import flower from '../../assets/flower.svg';
 import gsap from 'gsap';

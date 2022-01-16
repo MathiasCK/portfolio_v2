@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { GetInTouch, Navbar } from '../../components';
+import { GetInTouch, Navbar } from '..';
 import './styles/about.styles.scss';
 import gsap from 'gsap';
 import flower from '../../assets/flower.svg';
