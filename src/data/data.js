@@ -20,6 +20,10 @@ import crypto3 from '../assets/crypto-3.png';
 
 export const skillsData = [
   {
+    id: 0,
+    name: 'TypeScript',
+  },
+  {
     id: 1,
     name: 'JavaScript',
   },
