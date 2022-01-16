@@ -1,8 +1,8 @@
 import React from 'react';
 import { Home } from '../components';
 
-const Homepage = () => {
-  return <Home />;
+const Homepage = ({ isLoading }) => {
+  return <Home isLoading={isLoading} />;
 };
 
 export default Homepage;

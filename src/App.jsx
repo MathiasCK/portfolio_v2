@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './styles/App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './utils/ScrollToTop';
@@ -7,6 +7,8 @@ import { Homepage, Aboutpage, Projectspage, Contactpage } from './pages';
 import { Footer } from './components';
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   let cursor = useRef(null);
   let posX1 = useRef(null);
   let posY1 = useRef(null);
@@ -52,6 +54,7 @@ const App = () => {
   const load = gsap.timeline({
     paused: 'true',
   });
+
   let loader = useRef(null);
   let progress = useRef(null);
   let percent = useRef(null);
@@ -80,6 +83,7 @@ const App = () => {
   const loading = () => {
     id = setInterval(frame, 20);
   };
+
   const frame = () => {
     if (width1 >= 100) {
       clearInterval(id);
@@ -93,13 +97,16 @@ const App = () => {
   window.addEventListener('load', e => {
     loading();
   });
+
+  console.log(load.progress());
+
   return (
-    <div>
+    <>
       <Router>
         <div className='noise'></div>
         <div className='App'>
-          <div class='loader' ref={el => (loader = el)}>
-            <div class='progress' ref={el => (progress = el)}>
+          <div className='loader' ref={el => (loader = el)}>
+            <div className='progress' ref={el => (progress = el)}>
               <div id='percent' ref={el => (percent = el)}>
                 1%
               </div>
@@ -111,7 +118,7 @@ const App = () => {
           <ScrollToTop />
           <Switch>
             <Route path='/' exact>
-              <Homepage />
+              <Homepage isLoading={isLoading} />
             </Route>
           </Switch>
           <Switch>
@@ -133,7 +140,7 @@ const App = () => {
         </div>
       </Router>
       <Footer />
-    </div>
+    </>
   );
 };
 

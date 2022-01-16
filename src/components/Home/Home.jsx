@@ -9,9 +9,8 @@ import gsap from 'gsap';
 import Carousel from './Carousel';
 import Skills from './Skills';
 import ShortAbout from './ShortAbout';
-import Introduction from './Introduction';
 
-const Home = () => {
+const Home = ({ isLoading }) => {
   let text1 = useRef(null);
   let text2 = useRef(null);
   let text3 = useRef(null);
