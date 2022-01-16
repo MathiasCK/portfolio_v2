@@ -3,6 +3,7 @@ import { Navbar } from '..';
 import './styles/project.styles.scss';
 import arrow from '../../assets/arrow.svg';
 import gsap from 'gsap';
+import Gallery from './Gallery';
 
 const Projects = () => {
   const timeline_project = gsap.timeline();
@@ -42,102 +43,7 @@ const Projects = () => {
         </div>
         <div className='project-page-container'>
           <div className='project-page-items' ref={el => (itemsProject = el)}>
-            <div className='project-page-item'>
-              <div className='project-page-item-number'>
-                <p>01/06</p>
-              </div>
-              <a href='/'>
-                <div className='project-page-item-header'>
-                  <h1>Lorem, ipsum.</h1>
-                  <p>Lorem, ipsum.</p>
-                </div>
-                <div className='project-page-item-image project-page-item-image1'></div>
-                <div className='project-page-item-footer'>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <img src={arrow} alt='' />
-                </div>
-              </a>
-            </div>
-            <div className='project-page-item'>
-              <div className='project-page-item-number'>
-                <p>02/06</p>
-              </div>
-              <a href='/'>
-                <div className='project-page-item-header'>
-                  <h1>Lorem, ipsum.</h1>
-                  <p>Lorem, ipsum.</p>
-                </div>
-                <div className='project-page-item-image project-page-item-image2'></div>
-                <div className='project-page-item-footer'>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <img src={arrow} alt='' />
-                </div>
-              </a>
-            </div>
-            <div className='project-page-item'>
-              <div className='project-page-item-number'>
-                <p>03/06</p>
-              </div>
-              <a href='/'>
-                <div className='project-page-item-header'>
-                  <h1>Lorem, ipsum.</h1>
-                  <p>Lorem, ipsum.</p>
-                </div>
-                <div className='project-page-item-image project-page-item-image3'></div>
-                <div className='project-page-item-footer'>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <img src={arrow} alt='' />
-                </div>
-              </a>
-            </div>
-            <div className='project-page-item'>
-              <div className='project-page-item-number'>
-                <p>04/06</p>
-              </div>
-              <a href='/'>
-                <div className='project-page-item-header'>
-                  <h1>Lorem, ipsum.</h1>
-                  <p>Lorem, ipsum.</p>
-                </div>
-                <div className='project-page-item-image project-page-item-image4'></div>
-                <div className='project-page-item-footer'>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <img src={arrow} alt='' />
-                </div>
-              </a>
-            </div>
-            <div className='project-page-item'>
-              <div className='project-page-item-number'>
-                <p>05/06</p>
-              </div>
-              <a href='/'>
-                <div className='project-page-item-header'>
-                  <h1>Lorem, ipsum.</h1>
-                  <p>Lorem, ipsum.</p>
-                </div>
-                <div className='project-page-item-image project-page-item-image5'></div>
-                <div className='project-page-item-footer'>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <img src={arrow} alt='' />
-                </div>
-              </a>
-            </div>
-            <div className='project-page-item'>
-              <div className='project-page-item-number'>
-                <p>06/06</p>
-              </div>
-              <a href='/'>
-                <div className='project-page-item-header'>
-                  <h1>Lorem, ipsum.</h1>
-                  <p>Lorem, ipsum.</p>
-                </div>
-                <div className='project-page-item-image project-page-item-image6'></div>
-                <div className='project-page-item-footer'>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <img src={arrow} alt='' />
-                </div>
-              </a>
-            </div>
+            <Gallery />
           </div>
         </div>
       </div>
