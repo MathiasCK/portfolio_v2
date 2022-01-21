@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './styles/navbar.styles.scss';
 import { Link } from 'react-router-dom';
-import MenuIcon from '../../assets/menu.svg';
 
 const Header = ({ timeline }) => {
   let li1 = useRef(null);
@@ -25,7 +24,7 @@ const Header = ({ timeline }) => {
       <nav className='navbar'>
         <div id='logo'></div>
         <div className='toggle-menu'>
-          <img src={MenuIcon} alt='' />
+          <img src='../../assets/menu.svg' alt='' />
         </div>
         <ul className='menu-items'>
           <li ref={el => (li1 = el)}>

@@ -1,5 +1,4 @@
 import React from 'react';
-import another from '../../assets/another.svg';
 
 const ShortAbout = () => {
   return (
@@ -18,7 +17,7 @@ const ShortAbout = () => {
         </p>
       </div>
       <div className='another-svg'>
-        <img src={another} alt='' />
+        <img src='../../assets/another.svg' alt='' />
       </div>
     </div>
   );

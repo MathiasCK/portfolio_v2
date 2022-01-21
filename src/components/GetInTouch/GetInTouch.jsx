@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles/getInTouch.styles.scss';
-import flower2 from '../../assets/flower2.svg';
 
 const GetInTouch = () => {
   return (
@@ -10,7 +9,7 @@ const GetInTouch = () => {
         If you have any general project or enquiry feel free and contact me -
         available now!
       </p>
-      <img src={flower2} alt='' />
+      <img src='../../assets/flower2.svg' alt='' />
     </div>
   );
 };
