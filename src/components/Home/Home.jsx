@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './styles/home.styles.scss';
 import { Navbar } from '../../components';
-import flower from '../../assets/flower.svg';
 
 import arrow from '../../assets/arrow.svg';
 import { Link } from 'react-router-dom';
@@ -90,7 +89,7 @@ const Home = () => {
         </div>
       </div>
       <div className='flower-svg'>
-        <img src={flower} alt='' />
+        <img src='../../assets/flower.svg' alt='' />
       </div>
       <ShortAbout />
       <div className='my-skills-main-reel'>
