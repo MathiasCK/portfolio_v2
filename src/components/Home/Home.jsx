@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import './styles/home.styles.scss';
 import { Navbar } from '../../components';
+import flower from '../../images/flower.svg';
+import arrow from '../../images/arrow.svg';
 
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
@@ -88,7 +90,7 @@ const Home = () => {
         </div>
       </div>
       <div className='flower-svg'>
-        <img src='../../images/flower.svg' alt='' />
+        <img src={flower} alt='' />
       </div>
       <ShortAbout />
       <div className='my-skills-main-reel'>
@@ -97,7 +99,7 @@ const Home = () => {
         <div className='project-and-work'>
           <h1>
             <Link className='h1-project' to='/projects'>
-              My Projects and Works <img src='../../images/arrow.svg' alt='' />
+              My Projects and Works <img src={arrow} alt='' />
             </Link>
           </h1>
           <br />

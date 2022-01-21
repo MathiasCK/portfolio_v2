@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { GetInTouch, Navbar } from '..';
 import './styles/about.styles.scss';
 import gsap from 'gsap';
+import flower from '../../images/flower.svg';
 
 const About = () => {
   let text1 = useRef(null);
@@ -81,7 +82,7 @@ const About = () => {
           </div>
         </div>
         <div className='about-container-flower'>
-          <img src='../../images/flower.svg' alt='' />
+          <img src={flower} alt='' />
         </div>
       </div>
       <GetInTouch />

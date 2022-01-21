@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Navbar } from '..';
 import './styles/contact.styles.scss';
+import flower from '../../images/flower.svg';
 
 import gsap from 'gsap';
 
@@ -28,8 +29,7 @@ const Contact = () => {
       <div className='contact-page'>
         <div className='contact-page-container'>
           <h1 ref={el => (text1 = el)}>
-            Let's talk about <br /> the project?{' '}
-            <img src='../../images/flower.svg' alt='' />
+            Let's talk about <br /> the project? <img src={flower} alt='' />
           </h1>
         </div>
       </div>
