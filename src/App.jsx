@@ -96,8 +96,6 @@ const App = () => {
     loading();
   });
 
-  console.log(load.progress());
-
   return (
     <>
       <Router>
