@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='footer-btn'>
-            <a href='' className='footer-btn-a'>
+            <a href='/' className='footer-btn-a'>
               Get Started!
             </a>
           </div>

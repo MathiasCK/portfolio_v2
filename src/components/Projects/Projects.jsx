@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Navbar } from '..';
 import './styles/project.styles.scss';
-import arrow from '../../assets/arrow.svg';
 import gsap from 'gsap';
 import Gallery from './Gallery';
 
