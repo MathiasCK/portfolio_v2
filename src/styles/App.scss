@@ -20,7 +20,7 @@ body {
   opacity: 0.03;
   z-index: 1500;
   pointer-events: none;
-  background: url(../assets/noise.gif);
+  background: url(../images/noise.gif);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -28,7 +28,7 @@ body {
 
 .cursor-follower {
   position: absolute;
-  background: url(../assets/Red_asterisk.svg) no-repeat 50% 50%;
+  background: url(../images/Red_asterisk.svg) no-repeat 50% 50%;
   background-size: cover;
   height: 70px;
   width: 70px;

@@ -17,7 +17,7 @@ const ShortAbout = () => {
         </p>
       </div>
       <div className='another-svg'>
-        <img src='../../assets/another.svg' alt='' />
+        <img src='../../images/another.svg' alt='' />
       </div>
     </div>
   );

@@ -81,7 +81,7 @@ const About = () => {
           </div>
         </div>
         <div className='about-container-flower'>
-          <img src='../../assets/flower.svg' alt='' />
+          <img src='../../images/flower.svg' alt='' />
         </div>
       </div>
       <GetInTouch />

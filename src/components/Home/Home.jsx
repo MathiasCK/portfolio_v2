@@ -88,7 +88,7 @@ const Home = () => {
         </div>
       </div>
       <div className='flower-svg'>
-        <img src='../../assets/flower.svg' alt='' />
+        <img src='../../images/flower.svg' alt='' />
       </div>
       <ShortAbout />
       <div className='my-skills-main-reel'>
@@ -97,7 +97,7 @@ const Home = () => {
         <div className='project-and-work'>
           <h1>
             <Link className='h1-project' to='/projects'>
-              My Projects and Works <img src='../../assets/arrow.svg' alt='' />
+              My Projects and Works <img src='../../images/arrow.svg' alt='' />
             </Link>
           </h1>
           <br />

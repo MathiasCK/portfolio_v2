@@ -1,22 +1,22 @@
-import next1 from '../assets/next-1.png';
-import next2 from '../assets/next-2.png';
-import next3 from '../assets/next-3.png';
+import next1 from '../images/next-1.png';
+import next2 from '../images/next-2.png';
+import next3 from '../images/next-3.png';
 
-import unsplash1 from '../assets/unsplash-1.png';
-import unsplash2 from '../assets/unsplash-2.png';
-import unsplash3 from '../assets/unsplash-3.png';
+import unsplash1 from '../images/unsplash-1.png';
+import unsplash2 from '../images/unsplash-2.png';
+import unsplash3 from '../images/unsplash-3.png';
 
-import north1 from '../assets/north-1.png';
-import north2 from '../assets/north-2.png';
-import north3 from '../assets/north-3.png';
+import north1 from '../images/north-1.png';
+import north2 from '../images/north-2.png';
+import north3 from '../images/north-3.png';
 
-import crwn1 from '../assets/crwn-1.png';
-import crwn2 from '../assets/crwn-2.png';
-import crwn3 from '../assets/crwn-3.png';
+import crwn1 from '../images/crwn-1.png';
+import crwn2 from '../images/crwn-2.png';
+import crwn3 from '../images/crwn-3.png';
 
-import crypto1 from '../assets/crypto-1.png';
-import crypto2 from '../assets/crypto-2.png';
-import crypto3 from '../assets/crypto-3.png';
+import crypto1 from '../images/crypto-1.png';
+import crypto2 from '../images/crypto-2.png';
+import crypto3 from '../images/crypto-3.png';
 
 export const skillsData = [
   {

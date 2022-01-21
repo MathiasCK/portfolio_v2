@@ -15,7 +15,7 @@ const Gallery = () => {
             </div>
             <div className='project-page-item-footer'>
               <p>Visit site</p>
-              <img src='../../assets/arrow.svg' alt='' />
+              <img src='../../images/arrow.svg' alt='' />
             </div>
           </a>
         </div>

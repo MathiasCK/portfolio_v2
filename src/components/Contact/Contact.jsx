@@ -29,7 +29,7 @@ const Contact = () => {
         <div className='contact-page-container'>
           <h1 ref={el => (text1 = el)}>
             Let's talk about <br /> the project?{' '}
-            <img src='../../assets/flower.svg' alt='' />
+            <img src='../../images/flower.svg' alt='' />
           </h1>
         </div>
       </div>

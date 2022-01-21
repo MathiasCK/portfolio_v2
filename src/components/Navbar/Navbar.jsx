@@ -24,7 +24,7 @@ const Header = ({ timeline }) => {
       <nav className='navbar'>
         <div id='logo'></div>
         <div className='toggle-menu'>
-          <img src='../../assets/menu.svg' alt='' />
+          <img src='../../images/menu.svg' alt='' />
         </div>
         <ul className='menu-items'>
           <li ref={el => (li1 = el)}>

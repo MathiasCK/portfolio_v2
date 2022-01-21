@@ -9,7 +9,7 @@ const GetInTouch = () => {
         If you have any general project or enquiry feel free and contact me -
         available now!
       </p>
-      <img src='../../assets/flower2.svg' alt='' />
+      <img src='../../images/flower2.svg' alt='' />
     </div>
   );
 };
