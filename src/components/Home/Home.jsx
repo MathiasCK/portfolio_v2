@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import './styles/home.styles.scss';
 import { Navbar } from '../../components';
 
-import arrow from '../../assets/arrow.svg';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import Carousel from './Carousel';
@@ -98,7 +97,7 @@ const Home = () => {
         <div className='project-and-work'>
           <h1>
             <Link className='h1-project' to='/projects'>
-              My Projects and Works <img src={arrow} alt='' />
+              My Projects and Works <img src='../../assets/arrow.svg' alt='' />
             </Link>
           </h1>
           <br />

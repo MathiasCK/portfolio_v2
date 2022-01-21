@@ -1,5 +1,4 @@
 import React from 'react';
-import arrow from '../../assets/arrow.svg';
 import { websitesData } from '../../data/data';
 
 const Gallery = () => {
@@ -16,7 +15,7 @@ const Gallery = () => {
             </div>
             <div className='project-page-item-footer'>
               <p>Visit site</p>
-              <img src={arrow} alt='' />
+              <img src='../../assets/arrow.svg' alt='' />
             </div>
           </a>
         </div>
